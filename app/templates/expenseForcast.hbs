@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <form class="row">
+                    <h4>Filtros</h4>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="acctNum" name="acctNum" class="validate">
+                        <label for="acctNum">Numero de Cuenta</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="acctType" name="acctType" class="validate">
+                        <label for="acctType">Tipo de Cuenta</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <select id="selLevel">
+                            <option value="" disabled selected>Nivel de la Cuenta</option>
+                            <option value="1">Nivel 1</option>
+                            <option value="2">Nivel 2</option>
+                        </select>
+                        <label>Seleccionar</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="btn grey lighten">
+                            Consultar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Pronostico de Gastos</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <p>Meses</p>
+                        </div>
+                        <div class="col m2 s12">
+                            <input class="inputSlider center" type="number" id="sliderMonthMin" value="1">
+                        </div>
+                        <div class="col m8 s12">
+                            <div id="sliderMonth" class="filterSlider"></div>
+                        </div>
+                        <div class="col m2 s12">
+                            <input class="inputSlider center" type="number" id="sliderMonthMax" value="12">
+                        </div>
+                    </div>
+                    <div id="tableForeCast"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

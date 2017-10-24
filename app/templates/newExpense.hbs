@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <form class="row">
+                    <h4>Filtros</h4>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="" id="acctNum" name="acctNum" class="validate">
+                        <label for="acctNum">Numero de Cuenta</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="" id="acctAmt" name="acctAmt" class="validate">
+                        <label for="acctAmt">Monto USD</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="acctDet" name="acctDet" class="validate">
+                        <label for="acctDet">Concepto (Detalles)</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" class="datepicker" id="acctDate" name="acctDate">
+                        <label for="acctDate">Fecha</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <a class="btn grey lighten">
+                            Agregar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <div class="row">
+                    <h5><i class="material-icons">autorenew</i>Ultimos 5 Movimientos</h5>
+                    <div id="tableAccount"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

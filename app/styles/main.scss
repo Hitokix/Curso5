@@ -1,0 +1,135 @@
+// bower:scss
+// endbower
+@import 'block';
+@import 'menu';
+@import 'datepicker';
+.card-panel {
+    padding: 12px !important;
+    h4,
+    h5 {
+        text-align: center;
+        font-weight: bold;
+        color: #00C1FF !important;
+    }
+}
+
+.inputSlider {
+    height: auto !important;
+    font-size: 1.1em !important;
+}
+
+.filterSlider {
+    .noUi-origin,
+    .noUi-handle,
+    .noUi-connect,
+    .noUi-tooltip {
+        background-color: grey !important;
+    }
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Cairo', sans-serif;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+}
+
+.pageTitle {
+    h4 {
+        font-size: 2.5em !important;
+        padding-top: 15px;
+        @media screen and (max-width: 360px) {
+            font-size: 1.8em !important;
+        }
+    }
+}
+
+.mainContent {
+    padding-left: 300px;
+    @media screen and (max-width: 992px) {
+        padding-left: 0px;
+    }
+    height: 100px;
+    .profile {
+        height: 20px;
+        margin-top: -20px;
+        h3 {
+            font-size: 3em;
+            @media screen and (max-width: 330px) {
+                font-size: 3em;
+            }
+        }
+    }
+    .md-36 {
+        font-size: 36px !important;
+    }
+    .divider {
+        height: 2px;
+    }
+}
+
+.footContent {
+    padding-left: 300px;
+    padding-top: 15px !important;
+    @media screen and (max-width: 992px) {
+        padding-left: 0px;
+    }
+    .foot-copyright {
+        font-size: 12pt;
+        height: auto !important;
+        padding-left: 10px;
+        margin-bottom: 10px !important;
+        .foot-version {
+            padding-left: 50px;
+            @media screen and (max-width: 600px) {
+                padding-left: 10px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+}
+
+.filterForm {
+    label {
+        font-weight: bold;
+        color: black !important;
+    }
+    .datepicker {
+        border-bottom: 1px solid #00C1FF !important;
+    }
+}
+
+.btn-floating {
+    background-color: #00C1FF;
+}
+
+main {
+    flex: 1 0 auto;
+}

@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <form class="row">
+                    <h4>Filtros</h4>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="acctNum" name="acctNum" class="validate">
+                        <label for="acctNum">Numero de Cuenta</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="acctType" name="acctType" class="validate">
+                        <label for="acctType">Tipo de Cuenta</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" placeholder="" id="suppAcct" name="suppAcct" class="validate">
+                        <label for="suppAcct">Proveedor</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="btn grey lighten">
+                            Consultar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <div class="row">
+                    <h5>Movimiento Segun nivel de Cuenta</h5>
+                    <div class="input-field col s12">
+                        <select id="selLevel" onchange="levelChangeTable();">
+                            <option value="" disabled selected>Nivel de la Cuenta</option>
+                            <option value="1">Nivel 1</option>
+                            <option value="2">Nivel 2</option>
+                        </select>
+                        <label>Seleccionar</label>
+                    </div>
+                    <div class="col s12" id="tableLevel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<table class="bordered responsive-table">
+    <thead>
+        <tr>
+            <th>Tipo de Cuenta</th>
+            <th>Total USD</th>
+            <th>Presupuesto USD</th>
+            <th>Por Usar USD</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each account}}
+        <tr>
+            <td>{{Tipo}}</td>
+            <td>{{Monto}}</td>
+            <td>{{Budget}}</td>
+            <td>{{Diff}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

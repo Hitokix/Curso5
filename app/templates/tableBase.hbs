@@ -1,0 +1,20 @@
+<table class="bordered responsive-table">
+    <thead>
+        <tr>
+            <th>Cuenta</th>
+            <th>Monto USD</th>
+            <th>Fecha</th>
+            <th>Concepto (Detalles)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each account}}
+        <tr>
+            <td>{{Cuenta}}</td>
+            <td>{{Monto}}</td>
+            <td>{{Fecha}}</td>
+            <td>{{Concepto}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

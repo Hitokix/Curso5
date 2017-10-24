@@ -1,0 +1,20 @@
+<table class="bordered responsive-table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Duracion</th>
+            <th>Km/Pasos</th>
+            <th>Calorias</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each activity}}
+        <tr>
+            <td>{{Fecha}}</td>
+            <td>{{Duracion}}</td>
+            <td>{{Km}}</td>
+            <td>{{Calorias}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

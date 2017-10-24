@@ -1,0 +1,18 @@
+<ul id="slide-out" class="side-nav fixed">
+    <li>
+        <div class="userView">
+            <a href="#!user">
+                <div class="circle grey lighten-2">
+                    
+                </div>
+                <span class="white-text email">user@example.com<i class="material-icons">arrow_drop_down</i></span>
+            </a>
+            <p></p>
+        </div>
+    </li>
+    {{#each menuItems}}
+    <li>
+        <a href="#" id="{{state}}Link" class="menuLink white-text" onclick="changePageState('{{state}}')"><i class="material-icons md-light">{{icon}}</i>{{Item}}</a>
+    </li>
+    {{/each}}
+</ul>

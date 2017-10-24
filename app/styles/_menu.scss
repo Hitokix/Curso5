@@ -1,0 +1,25 @@
+.menuActive {
+    font-weight: bold !important;
+    background-color: #8f4800 !important;
+}
+
+.userView {
+    .white-text {
+        font-size: 1em !important;
+        font-style: italic;
+        margin-top: -24px;
+        margin-left: 70px;
+    }
+    background-color: #8f4800 !important;
+}
+
+#slide-out {
+    background-color: #3f2205 !important;
+    .white-text {
+        font-size: 1em !important;
+        padding-left: 20px;
+    }
+    .md-light {
+        color: rgba(255, 255, 255, 1) !important;
+    }
+}

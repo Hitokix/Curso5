@@ -1,0 +1,20 @@
+.picker {
+    .picker__date-display {
+        background-color: #fb8c00 !important;
+    }
+    .btn-flat {
+        color: #00C1FF !important;
+    }
+    .picker__day--selected,
+    .picker__day--selected:hover,
+    .picker--focused .picker__day--selected,
+    .picker__day--highlighted:hover,
+    .picker--focused .picker__day--highlighted {
+        color: white !important;
+        background-color: #00C1FF !important;
+    }
+    .picker__day.picker__day--today {
+        color: black !important;
+        font-weight: bold;
+    }
+}
