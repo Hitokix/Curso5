@@ -12,7 +12,7 @@
     </li>
     {{#each menuItems}}
     <li>
-        <a href="#" id="{{state}}Link" class="menuLink white-text" onclick="changePageState('{{state}}')"><i class="material-icons md-light">{{icon}}</i>{{Item}}</a>
+        <a href="#" id="{{state}}Link" class="menuLink white-text {{show}}" onclick="changePageState('{{state}}')"><i class="material-icons md-light">{{icon}}</i>{{Item}}</a>
     </li>
     {{/each}}
 </ul>

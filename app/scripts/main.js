@@ -21,20 +21,7 @@ Handlebars.registerHelper('case', function(value, option) {
     }
 });
 
-/*
-var mainblock = document.querySelectorAll('.block');
-var mainblocksName = [
-    { blockName: 'Usuario', blockHeight: '100px;' },
-    { blockName: 'Pie de Pagina', blockHeight: '70px;' }
-]
-
-mainblock.forEach(function(mainBlocks, index) {
-    var mainContext = mainblocksName[index];
-    mainBlocks.innerHTML = ExpApp.blocks(mainContext);
-}, this);
-*/
-
 changePageState('phisActivity');
 
 // Initialize collapse button
-$('.button-collapse').sideNav();
+//$('.button-collapse').sideNav();

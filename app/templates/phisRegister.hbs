@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card-panel">
+            <div class="card-content">
+                <form class="row" id="regForm" method="post">
+                    <div class="row">
+                        <h4>Filtros</h4>
+                        <div class="input-field col l6 m6 s12">
+                            <input type="text" class="datepicker blueBottom" id="acctDateFrom" name="acctDateFrom">
+                            <label for="acctDateFrom">
+                                <i class="material-icons md-blue">date_range</i>Desde
+                            </label>
+                        </div>
+                        <div class="input-field col l6 m6 s12">
+                            <select id="selLevel">
+                                <option value="" disabled selected>Actividad</option>
+                                <option value="1">Ciclismo</option>
+                                <option value="2">Correr</option>
+                                <option value="3">Caminar</option>
+                            </select>
+                            <label for="selLevel">Seleccionar</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l6 m6 s12">
+                            <input type="text" placeholder="" id="actDist" name="actDist" class="validate blueBottom">
+                            <label for="actDist">Distancia (Km)</label>
+                        </div>
+                        <div class="input-field col l6 m6 s12">
+                            <input type="number" placeholder="" id="actDur" name="actDur" class="validate blueBottom">
+                            <label for="actDur">Duracion (min)</label>
+                        </div>
+                        <div class="input-field col l6 m6 s12">
+                            <input type="number" placeholder="" id="actCal" name="actCal" class="validate blueBottom">
+                            <label for="actCal">Calorias</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col m4 s12">
+                            <input type="button" id="btnAdd" name="btnAdd" class="btn modal-trigger orange darken-2" value="AGREGAR" href="#modalAccept">
+                        </div>
+                        <div class="input-field col m4 s12">
+                            <input type="button" id="btnAdd" name="btnAdd" class="btn modal-trigger orange darken-2" value="CANCELAR" href="#modalCancel">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalCancel" class="modal">
+    <div class="modal-content">
+        <h4>Cancelar</h4>
+        <p>Esta seguro desea cancelar el Registro</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        <a onclick="changePageState('phisActivity')" class="modal-action modal-close waves-effect waves-green btn-flat accept">Aceptar</a>
+    </div>
+</div>
+<div id="modalAccept" class="modal">
+    <div class="modal-content">
+        <h4>Actvidad Agregada</h4>
+        <p></p>
+    </div>
+    <div class="modal-footer">
+        <a onclick="changePageState('phisActivity')" class="modal-action modal-close waves-effect waves-green btn-flat accept">Aceptar</a>
+    </div>
+</div>
